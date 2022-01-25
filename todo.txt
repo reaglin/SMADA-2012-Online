@@ -1,0 +1,8 @@
+- Create rainfall from dimensionless rainfall
+- Create SCS type rainfalls
+- Rainfall report
+- Generate hydrograph page
+- Add to GUI Manager XML Export Tag
+- GUI Manager - Input Prompt, Print Prompt
+
+Numeric Format String

@@ -1,0 +1,14 @@
+ALTER PROCEDURE [dbo].[sp_DeleteRainfall]
+(
+ @RainfallID INT
+)
+AS
+BEGIN
+
+DELETE FROM Hydrograph WHERE RainfallID = @RainfallID
+
+DELETE FROM RainfallStep WHERE RainfallID = @RainfallID
+
+DELETE FROM Rainfall WHERE id = @RainfallID
+
+END

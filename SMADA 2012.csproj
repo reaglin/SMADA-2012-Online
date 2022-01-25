@@ -1,0 +1,770 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9CD42196-487D-4324-BD54-C25697410AEB}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SMADA_2012</RootNamespace>
+    <AssemblyName>ISRID-InputForms</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.60623.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\AjaxControlToolkit.4.1.60623\lib\40\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNet.Highcharts">
+      <HintPath>Highcharts\DotNet.Highcharts.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\packages\AjaxControlToolkit.4.1.60623\lib\40\SanitizerProviders\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="SanitizerProviders">
+      <HintPath>..\packages\AjaxControlToolkit.4.1.60623\lib\40\SanitizerProviders\SanitizerProviders.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="DefaultNotLoggedIn.aspx" />
+    <Content Include="EditFormHeader.aspx" />
+    <Content Include="Help.aspx" />
+    <Content Include="highcharts.js" />
+    <Content Include="Images\BW.BMP" />
+    <Content Include="Images\FAA.BMP" />
+    <Content Include="Images\IZZARD.BMP" />
+    <Content Include="Images\KERBY.BMP" />
+    <Content Include="Images\KINEMAT.BMP" />
+    <Content Include="Images\KIRPICH.BMP" />
+    <Content Include="Images\NRCS.bmp" />
+    <Content Include="InsertFeedback.aspx" />
+    <Content Include="AdminForms\EditDataField.aspx" />
+    <Content Include="jquery-1.9.1.min.js" />
+    <Content Include="SMADAForms\AnalyzeChannel.aspx" />
+    <Content Include="SMADAForms\AnalyzePipe.aspx" />
+    <Content Include="SMADAForms\AnalyzePollutantLoading.aspx" />
+    <Content Include="SMADAForms\AnalyzeRegression.aspx" />
+    <Content Include="SMADAForms\CalculateTimeOfConcentration.aspx" />
+    <Content Include="SMADAForms\ComingSoon.aspx" />
+    <Content Include="SMADAForms\AnalyzeDistribution.aspx" />
+    <Content Include="SMADAForms\EditHydrograph.aspx" />
+    <Content Include="SMADAForms\EditLandUses.aspx" />
+    <Content Include="SMADAForms\EditRainfall.aspx" />
+    <Content Include="SMADAForms\EditRainfallValues.aspx" />
+    <Content Include="SMADAForms\EditRegression.aspx" />
+    <Content Include="SMADAForms\EditWatershed.aspx" />
+    <Content Include="SMADAForms\ImportDimensionlessRainfall.aspx" />
+    <Content Include="SMADAForms\ManageDistributions.aspx" />
+    <Content Include="SMADAForms\ManageLandUses.aspx" />
+    <Content Include="SMADAForms\ManageRegressions.aspx" />
+    <Content Include="SMADAForms\EditDistribution.aspx" />
+    <Content Include="SMADAForms\PlotHydrograph.aspx" />
+    <Content Include="SMADAForms\PlotRainfall.aspx" />
+    <Content Include="SMADAForms\PrintHydrograph.aspx" />
+    <Content Include="SMADAForms\printRainfall.aspx" />
+    <Content Include="SMADAForms\PrintWatershed.aspx" />
+    <Content Include="SMADAForms\SelectHydrograph.aspx" />
+    <Content Include="SMADAForms\SelectRainfall.aspx" />
+    <Content Include="SMADAForms\SelectWatershed.aspx" />
+    <Content Include="UserControls\SMADA\ucEditLandUse.ascx" />
+    <Content Include="UserControls\ucPlot.ascx" />
+    <Content Include="UserControls\ucPollutantTools.ascx" />
+    <Content Include="UserControls\SMADA\ucCircularPipe.ascx" />
+    <Content Include="UserControls\SMADA\ucTrapezoidalChannel.ascx" />
+    <Content Include="UserControls\ucCalculators.ascx" />
+    <Content Include="UserControls\ucCodeSelector.ascx" />
+    <Content Include="UserControls\ucFormHeader.ascx" />
+    <Content Include="UserControls\ucRainfallLinks.ascx" />
+    <Content Include="UserControls\ucSMADAHydrograph.ascx" />
+    <Content Include="UserControls\ucSMADATools.ascx" />
+    <Content Include="UserControls\SMADA\ucTimeOfConcentration.ascx" />
+    <Content Include="UserControls\ucWatershedLinks.ascx" />
+    <Content Include="UserControls\WebUserControl1.ascx" />
+    <Content Include="ViewFeedback.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Code\CCMS.cs" />
+    <Compile Include="App_Code\ComboBoxManager.cs" />
+    <Compile Include="App_Code\DatabaseField.cs" />
+    <Compile Include="App_Code\DatabaseTable.cs" />
+    <Compile Include="App_Code\DatabaseTransferSystem.cs" />
+    <Compile Include="App_Code\DatabaseViewer.cs" />
+    <Compile Include="App_Code\dboperations.cs" />
+    <Compile Include="App_Code\Feedback.cs" />
+    <Compile Include="App_Code\GlobalFunctions.cs" />
+    <Compile Include="App_Code\ISRID\ISRIDDataTransfer.cs" />
+    <Compile Include="App_Code\ISRID\ISRIDIncidentInput.cs" />
+    <Compile Include="App_Code\SMADA\Pipe.cs" />
+    <Compile Include="App_Code\SMADA\PollutantLoad.cs" />
+    <Content Include="App_Code\SMADA\PollutantLandUse.cs">
+      <DependentUpon>PollutantLandUse.xsd</DependentUpon>
+    </Content>
+    <Compile Include="App_Code\SMADA\RegressionAnalysis.cs" />
+    <Compile Include="App_Code\SMADA\SewerPipe.cs" />
+    <Compile Include="App_Code\SMADA\SMADABase.cs" />
+    <Compile Include="App_Code\SMADA\SMADAPlots.cs" />
+    <Compile Include="App_Code\ObjectCommon.cs" />
+    <Content Include="EditCategory.aspx" />
+    <Compile Include="App_Code\Plotting.cs" />
+    <Compile Include="App_Code\SMADA\DistributionAnalysis.cs" />
+    <Compile Include="App_Code\SMADA\Pond.cs" />
+    <Compile Include="App_Code\SMADA\RainfallClass.cs" />
+    <Compile Include="App_Code\SMADA\TimeOfConcentration.cs" />
+    <Compile Include="App_Code\SMADA\WatershedClass.cs" />
+    <Compile Include="App_Code\SpreadsheetPaste.cs" />
+    <Compile Include="App_Code\TableWrapper.cs" />
+    <Compile Include="App_Code\UserLogin.cs" />
+    <Compile Include="ISRIDForms\UserPreferences.cs" />
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DefaultLoggedIn.aspx.cs">
+      <DependentUpon>DefaultLoggedIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DefaultLoggedIn.aspx.designer.cs">
+      <DependentUpon>DefaultLoggedIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DefaultNotLoggedIn.aspx.cs">
+      <DependentUpon>DefaultNotLoggedIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DefaultNotLoggedIn.aspx.designer.cs">
+      <DependentUpon>DefaultNotLoggedIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditCategory.aspx.cs">
+      <DependentUpon>EditCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditCategory.aspx.designer.cs">
+      <DependentUpon>EditCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditCode.aspx.cs">
+      <DependentUpon>EditCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditCode.aspx.designer.cs">
+      <DependentUpon>EditCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditDatabaseTransfer.aspx.cs">
+      <DependentUpon>EditDatabaseTransfer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditDatabaseTransfer.aspx.designer.cs">
+      <DependentUpon>EditDatabaseTransfer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditFieldMapping.aspx.cs">
+      <DependentUpon>EditFieldMapping.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditFieldMapping.aspx.designer.cs">
+      <DependentUpon>EditFieldMapping.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditFormHeader.aspx.cs">
+      <DependentUpon>EditFormHeader.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditFormHeader.aspx.designer.cs">
+      <DependentUpon>EditFormHeader.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditGUIFields.aspx.cs">
+      <DependentUpon>EditGUIFields.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditGUIFields.aspx.designer.cs">
+      <DependentUpon>EditGUIFields.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditRoles.aspx.cs">
+      <DependentUpon>EditRoles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditRoles.aspx.designer.cs">
+      <DependentUpon>EditRoles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditSQLQuery.aspx.cs">
+      <DependentUpon>EditSQLQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditSQLQuery.aspx.designer.cs">
+      <DependentUpon>EditSQLQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditUserLogin.aspx.cs">
+      <DependentUpon>EditUserLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditUserLogin.aspx.designer.cs">
+      <DependentUpon>EditUserLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Help.aspx.cs">
+      <DependentUpon>Help.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Help.aspx.designer.cs">
+      <DependentUpon>Help.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InsertFeedback.aspx.cs">
+      <DependentUpon>InsertFeedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InsertFeedback.aspx.designer.cs">
+      <DependentUpon>InsertFeedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ISRID.Master.cs">
+      <DependentUpon>ISRID.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ISRID.Master.designer.cs">
+      <DependentUpon>ISRID.Master</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForms\EditDataField.aspx.cs">
+      <DependentUpon>EditDataField.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminForms\EditDataField.aspx.designer.cs">
+      <DependentUpon>EditDataField.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ISRIDForms\ISRIDInputMaster.Master.cs">
+      <DependentUpon>ISRIDInputMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ISRIDForms\ISRIDInputMaster.Master.designer.cs">
+      <DependentUpon>ISRIDInputMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportGeneric.aspx.cs">
+      <DependentUpon>ReportGeneric.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportGeneric.aspx.designer.cs">
+      <DependentUpon>ReportGeneric.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportInterfaceFields.aspx.cs">
+      <DependentUpon>ReportInterfaceFields.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportInterfaceFields.aspx.designer.cs">
+      <DependentUpon>ReportInterfaceFields.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SMADAForms\AnalyzeChannel.aspx.cs">
+      <DependentUpon>AnalyzeChannel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SMADAForms\AnalyzeChannel.aspx.designer.cs">
+      <DependentUpon>AnalyzeChannel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SMADAForms\AnalyzePipe.aspx.cs">
+      <DependentUpon>AnalyzePipe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SMADAForms\AnalyzePipe.aspx.designer.cs">
+      <DependentUpon>AnalyzePipe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SMADAForms\AnalyzePollutantLoading.aspx.cs">
+      <DependentUpon>AnalyzePollutantLoading.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SMADAForms\AnalyzePollutantLoading.aspx.designer.cs">
+      <DependentUpon>AnalyzePollutantLoading.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SMADAForms\AnalyzeRegression.aspx.cs">
+      <DependentUpon>AnalyzeRegression.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SMADAForms\AnalyzeRegression.aspx.designer.cs">
+      <DependentUpon>AnalyzeRegression.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SMADAForms\CalculateTimeOfConcentration.aspx.cs">
+      <DependentUpon>CalculateTimeOfConcentration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SMADAForms\CalculateTimeOfConcentration.aspx.designer.cs">
+      <DependentUpon>CalculateTimeOfConcentration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SMADAForms\ComingSoon.aspx.cs">
+      <DependentUpon>ComingSoon.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SMADAForms\ComingSoon.aspx.designer.cs">
+      <DependentUpon>ComingSoon.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SMADAForms\AnalyzeDistribution.aspx.cs">
+      <DependentUpon>AnalyzeDistribution.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SMADAForms\AnalyzeDistribution.aspx.designer.cs">
+      <DependentUpon>AnalyzeDistribution.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SMADAForms\EditHydrograph.aspx.cs">
+      <DependentUpon>EditHydrograph.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SMADAForms\EditHydrograph.aspx.designer.cs">
+      <DependentUpon>EditHydrograph.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SMADAForms\EditLandUses.aspx.cs">
+      <DependentUpon>EditLandUses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SMADAForms\EditLandUses.aspx.designer.cs">
+      <DependentUpon>EditLandUses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SMADAForms\EditRainfall.aspx.cs">
+      <DependentUpon>EditRainfall.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SMADAForms\EditRainfall.aspx.designer.cs">
+      <DependentUpon>EditRainfall.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SMADAForms\EditRainfallValues.aspx.cs">
+      <DependentUpon>EditRainfallValues.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SMADAForms\EditRainfallValues.aspx.designer.cs">
+      <DependentUpon>EditRainfallValues.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SMADAForms\EditRegression.aspx.cs">
+      <DependentUpon>EditRegression.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SMADAForms\EditRegression.aspx.designer.cs">
+      <DependentUpon>EditRegression.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SMADAForms\EditWatershed.aspx.cs">
+      <DependentUpon>EditWatershed.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SMADAForms\EditWatershed.aspx.designer.cs">
+      <DependentUpon>EditWatershed.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SMADAForms\ImportDimensionlessRainfall.aspx.cs">
+      <DependentUpon>ImportDimensionlessRainfall.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SMADAForms\ImportDimensionlessRainfall.aspx.designer.cs">
+      <DependentUpon>ImportDimensionlessRainfall.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SMADAForms\ManageDistributions.aspx.cs">
+      <DependentUpon>ManageDistributions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SMADAForms\ManageDistributions.aspx.designer.cs">
+      <DependentUpon>ManageDistributions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SMADAForms\ManageLandUses.aspx.cs">
+      <DependentUpon>ManageLandUses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SMADAForms\ManageLandUses.aspx.designer.cs">
+      <DependentUpon>ManageLandUses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SMADAForms\ManageRegressions.aspx.cs">
+      <DependentUpon>ManageRegressions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SMADAForms\ManageRegressions.aspx.designer.cs">
+      <DependentUpon>ManageRegressions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SMADAForms\EditDistribution.aspx.cs">
+      <DependentUpon>EditDistribution.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SMADAForms\EditDistribution.aspx.designer.cs">
+      <DependentUpon>EditDistribution.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SMADAForms\PlotHydrograph.aspx.cs">
+      <DependentUpon>PlotHydrograph.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SMADAForms\PlotHydrograph.aspx.designer.cs">
+      <DependentUpon>PlotHydrograph.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SMADAForms\PlotRainfall.aspx.cs">
+      <DependentUpon>PlotRainfall.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SMADAForms\PlotRainfall.aspx.designer.cs">
+      <DependentUpon>PlotRainfall.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SMADAForms\PrintHydrograph.aspx.cs">
+      <DependentUpon>PrintHydrograph.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SMADAForms\PrintHydrograph.aspx.designer.cs">
+      <DependentUpon>PrintHydrograph.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SMADAForms\printRainfall.aspx.cs">
+      <DependentUpon>printRainfall.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SMADAForms\printRainfall.aspx.designer.cs">
+      <DependentUpon>printRainfall.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SMADAForms\PrintWatershed.aspx.cs">
+      <DependentUpon>PrintWatershed.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SMADAForms\PrintWatershed.aspx.designer.cs">
+      <DependentUpon>PrintWatershed.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SMADAForms\SelectHydrograph.aspx.cs">
+      <DependentUpon>SelectHydrograph.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SMADAForms\SelectHydrograph.aspx.designer.cs">
+      <DependentUpon>SelectHydrograph.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SMADAForms\SelectRainfall.aspx.cs">
+      <DependentUpon>SelectRainfall.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SMADAForms\SelectRainfall.aspx.designer.cs">
+      <DependentUpon>SelectRainfall.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SMADAForms\SelectWatershed.aspx.cs">
+      <DependentUpon>SelectWatershed.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SMADAForms\SelectWatershed.aspx.designer.cs">
+      <DependentUpon>SelectWatershed.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SQLQueryManager.cs" />
+    <Compile Include="UserControls\SMADA\ucEditLandUse.ascx.cs">
+      <DependentUpon>ucEditLandUse.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\SMADA\ucEditLandUse.ascx.designer.cs">
+      <DependentUpon>ucEditLandUse.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucPlot.ascx.cs">
+      <DependentUpon>ucPlot.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucPlot.ascx.designer.cs">
+      <DependentUpon>ucPlot.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucPollutantTools.ascx.cs">
+      <DependentUpon>ucPollutantTools.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucPollutantTools.ascx.designer.cs">
+      <DependentUpon>ucPollutantTools.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SMADA\ucCircularPipe.ascx.cs">
+      <DependentUpon>ucCircularPipe.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\SMADA\ucCircularPipe.ascx.designer.cs">
+      <DependentUpon>ucCircularPipe.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SMADA\ucTrapezoidalChannel.ascx.cs">
+      <DependentUpon>ucTrapezoidalChannel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\SMADA\ucTrapezoidalChannel.ascx.designer.cs">
+      <DependentUpon>ucTrapezoidalChannel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucAdminLinks.ascx.cs">
+      <DependentUpon>ucAdminLinks.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucAdminLinks.ascx.designer.cs">
+      <DependentUpon>ucAdminLinks.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucCalculators.ascx.cs">
+      <DependentUpon>ucCalculators.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucCalculators.ascx.designer.cs">
+      <DependentUpon>ucCalculators.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucCodeSelector.ascx.cs">
+      <DependentUpon>ucCodeSelector.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucCodeSelector.ascx.designer.cs">
+      <DependentUpon>ucCodeSelector.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucCoordinates.ascx.cs">
+      <DependentUpon>ucCoordinates.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucCoordinates.ascx.designer.cs">
+      <DependentUpon>ucCoordinates.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucDatabaseManager.ascx.cs">
+      <DependentUpon>ucDatabaseManager.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucDatabaseManager.ascx.designer.cs">
+      <DependentUpon>ucDatabaseManager.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucFormHeader.ascx.cs">
+      <DependentUpon>ucFormHeader.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucFormHeader.ascx.designer.cs">
+      <DependentUpon>ucFormHeader.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucGuestLinks.ascx.cs">
+      <DependentUpon>ucGuestLinks.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucGuestLinks.ascx.designer.cs">
+      <DependentUpon>ucGuestLinks.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucRainfallLinks.ascx.cs">
+      <DependentUpon>ucRainfallLinks.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucRainfallLinks.ascx.designer.cs">
+      <DependentUpon>ucRainfallLinks.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucReportsAndSearch.ascx.cs">
+      <DependentUpon>ucReportsAndSearch.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucReportsAndSearch.ascx.designer.cs">
+      <DependentUpon>ucReportsAndSearch.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucSMADAHydrograph.ascx.cs">
+      <DependentUpon>ucSMADAHydrograph.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucSMADAHydrograph.ascx.designer.cs">
+      <DependentUpon>ucSMADAHydrograph.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucSMADATools.ascx.cs">
+      <DependentUpon>ucSMADATools.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucSMADATools.ascx.designer.cs">
+      <DependentUpon>ucSMADATools.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucSubject.ascx.cs">
+      <DependentUpon>ucSubject.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucSubject.ascx.designer.cs">
+      <DependentUpon>ucSubject.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucSubjectMedical.ascx.cs">
+      <DependentUpon>ucSubjectMedical.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucSubjectMedical.ascx.designer.cs">
+      <DependentUpon>ucSubjectMedical.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SMADA\ucTimeOfConcentration.ascx.cs">
+      <DependentUpon>ucTimeOfConcentration.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\SMADA\ucTimeOfConcentration.ascx.designer.cs">
+      <DependentUpon>ucTimeOfConcentration.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucWatershedLinks.ascx.cs">
+      <DependentUpon>ucWatershedLinks.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucWatershedLinks.ascx.designer.cs">
+      <DependentUpon>ucWatershedLinks.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\WebUserControl1.ascx.cs">
+      <DependentUpon>WebUserControl1.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\WebUserControl1.ascx.designer.cs">
+      <DependentUpon>WebUserControl1.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewCategories.aspx.cs">
+      <DependentUpon>ViewCategories.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewCategories.aspx.designer.cs">
+      <DependentUpon>ViewCategories.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewData.aspx.cs">
+      <DependentUpon>ViewData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewData.aspx.designer.cs">
+      <DependentUpon>ViewData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewDataTransfers.aspx.cs">
+      <DependentUpon>ViewDataTransfers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewDataTransfers.aspx.designer.cs">
+      <DependentUpon>ViewDataTransfers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewFeedback.aspx.cs">
+      <DependentUpon>ViewFeedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewFeedback.aspx.designer.cs">
+      <DependentUpon>ViewFeedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewGUIFields.aspx.cs">
+      <DependentUpon>ViewGUIFields.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewGUIFields.aspx.designer.cs">
+      <DependentUpon>ViewGUIFields.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewSQLQueries.aspx.cs">
+      <DependentUpon>ViewSQLQueries.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewSQLQueries.aspx.designer.cs">
+      <DependentUpon>ViewSQLQueries.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewTables.aspx.cs">
+      <DependentUpon>ViewTables.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewTables.aspx.designer.cs">
+      <DependentUpon>ViewTables.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DefaultLoggedIn.aspx" />
+    <Content Include="EditCode.aspx" />
+    <Content Include="EditRoles.aspx" />
+    <Content Include="EditUserLogin.aspx" />
+    <Content Include="ISRID.Master" />
+    <Content Include="Styles.css" />
+    <Content Include="UserControls\ucCoordinates.ascx" />
+    <Content Include="ViewCategories.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="EditDatabaseTransfer.aspx" />
+    <Content Include="EditFieldMapping.aspx" />
+    <Content Include="EditGUIFields.aspx" />
+    <Content Include="EditSQLQuery.aspx" />
+    <Content Include="ISRIDForms\ISRIDInputMaster.Master" />
+    <Content Include="ISRIDlogo-notagline.gif" />
+    <Content Include="ReportGeneric.aspx" />
+    <Content Include="ReportInterfaceFields.aspx" />
+    <Content Include="UserControls\ucAdminLinks.ascx" />
+    <Content Include="UserControls\ucDatabaseManager.ascx" />
+    <Content Include="UserControls\ucGuestLinks.ascx" />
+    <Content Include="UserControls\ucReportsAndSearch.ascx" />
+    <Content Include="UserControls\ucSubject.ascx" />
+    <Content Include="UserControls\ucSubjectMedical.ascx" />
+    <Content Include="ViewData.aspx" />
+    <Content Include="ViewDataTransfers.aspx" />
+    <Content Include="ViewGUIFields.aspx" />
+    <Content Include="ViewSQLQueries.aspx" />
+    <Content Include="ViewTables.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App_Code\SMADA\PollutantLandUse.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>32397</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

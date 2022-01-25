@@ -1,0 +1,217 @@
+﻿body
+{
+
+}
+
+.mainButton {
+	-moz-box-shadow: 0px 1px 0px 0px #bbdaf7;
+	-webkit-box-shadow: 0px 1px 0px 0px #bbdaf7;
+	box-shadow: 0px 1px 0px 0px #bbdaf7;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #79bbff), color-stop(1, #378de5) );
+	background:-moz-linear-gradient( center top, #79bbff 5%, #378de5 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#79bbff', endColorstr='#378de5');
+	background-color:#79bbff;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	border:3px solid #84bbf3;
+	border-style:ridge ;
+	
+	color:#ffffff;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #528ecc;
+	width: 300px;
+	height: 100px;
+	white-space:normal; 
+}
+
+.mainButton:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #378de5), color-stop(1, #79bbff) );
+	background:-moz-linear-gradient( center top, #378de5 5%, #79bbff 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#378de5', endColorstr='#79bbff');
+	background-color:#378de5;
+}
+.mainButton:active {
+	position:relative;
+	top:1px;
+}
+
+/* Grid Buttons are used within grids */
+.gridButton {
+	-moz-box-shadow: 0px 1px 0px 0px #bbdaf7;
+	-webkit-box-shadow: 0px 1px 0px 0px #bbdaf7;
+	box-shadow: 0px 1px 0px 0px #bbdaf7;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #79bbff), color-stop(1, #378de5) );
+	background:-moz-linear-gradient( center top, #79bbff 5%, #378de5 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#79bbff', endColorstr='#378de5');
+	background-color:#79bbff;
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	border-radius:2px;
+	border:2px solid #84bbf3;
+    border-style:ridge ;
+
+	
+	color:#ffffff;
+	font-family:arial;
+	font-size:12px;
+	font-weight:bold;
+	padding:3px 24px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #528ecc;
+	width: 300px;
+	white-space:normal; 
+}
+
+.gridButton:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #378de5), color-stop(1, #79bbff) );
+	background:-moz-linear-gradient( center top, #378de5 5%, #79bbff 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#378de5', endColorstr='#79bbff');
+	background-color:#378de5;
+}
+.gridButton:active {
+	position:relative;
+	top:1px;
+}
+
+/* Action Buttons are used in forms */
+.actionButton  	
+{
+	-moz-box-shadow: 0px 1px 0px 0px #bbdaf7;
+	-webkit-box-shadow: 0px 1px 0px 0px #bbdaf7;
+	box-shadow: 0px 1px 0px 0px #bbdaf7;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #79bbff), color-stop(1, #378de5) );
+	background:-moz-linear-gradient( center top, #79bbff 5%, #378de5 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#79bbff', endColorstr='#378de5');
+	background-color:#79bbff;
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	border-radius:2px;
+	border:2px solid #84bbf3;
+    border-style:ridge ;
+
+
+	color:#ffffff;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:3px 24px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #528ecc;
+	width: 200px;
+	white-space:normal; 
+ }
+.actionButton:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #378de5), color-stop(1, #79bbff) );
+	background:-moz-linear-gradient( center top, #378de5 5%, #79bbff 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#378de5', endColorstr='#79bbff');
+	background-color:#378de5;
+}
+.actionButton:active {
+	position:relative;
+	top:1px;
+}
+
+.pagetitle {font-size:x-large; font-weight: bold; text-align:center; font-family:Arial Greek;
+            color: #003399; padding-left: 6px; padding-right: 7px; padding-top: 2px; padding-bottom: 2px;}
+
+.posttitle  { background:none repeat scroll 0 0 #E6E8EA; border-color:#6B3C9E;
+            border-style:solid; border-width:1px 0; padding:5px;}
+
+.labels{ font-family:Arial Greek; text-align:right; font-weight:bold }
+.controls{ border-style:solid  ; font-family:Arial Greek;  }
+.formheader { font-size:x-large; text-align:center; font-family:Arial Greek}
+.watermark { background-color:#d2dff1; font-style:italic;}
+.formtablerow1 {background-color:#f7e8d6; padding-bottom:10px; padding-top:5px; padding-left:5px; padding-right:5px;}
+.formbutton { font-size:large; background-color:ButtonFace; margin-left:5px; margin-right:5px }
+.coordinateLabel {font-size:medium; text-align:center;}
+
+.gridTitle
+{
+margin-left:1%;
+margin-right:5%;
+padding-left:10%;
+padding-right:10%;
+font-weight:bold;  
+color:#000000;
+background-color:#7DADFF;
+letter-spacing:0pt;
+word-spacing:2pt;
+font-size:20px;
+text-align:center;
+font-family:arial;
+
+}
+
+.linkListHeader  	
+{
+ float:left;
+ margin-left:0%;
+ margin-right:30%;
+ width:100%;
+ padding-left:5%;
+ padding-right:40%;
+ font-weight:bold;  
+ color:#000000;
+background-color:#7DADFF;
+letter-spacing:0pt;
+word-spacing:2pt;
+font-size:20px;
+text-align:center;
+font-family:arial;
+ }
+
+.linkListHeader2 {font-size:large; }
+
+.pagebase { font-size:small; text-align:right;}
+.pageright { font-size:small; float:right;}
+.pageleft{ font-size:small; float:left;}
+.ms-WPTitle {font-weight: bold; font-family: verdana, arial, helvetica, sans-serif; color: #003399; 
+             padding-left: 6px; padding-right: 7px; padding-top: 2px; padding-bottom: 2px; font-size: 8pt; }
+             
+.grayCell {background-color:#e6e8ea; padding-bottom:10px;}
+.purpleCell {background-color:#f1beff; padding-bottom:10px;}
+.greenCell {background-color:#beffbf; padding-bottom:10px;}
+.defaultCell {background-color:#f7e8d6; text-align:center; padding-bottom:10px;}
+.defaultCellL {background-color:#E6E8EA; text-align:left; padding-bottom:10px; padding-left:5px; }
+.defaultCellR {background-color:#E6E8EA; text-align:right; padding-bottom:10px; padding-right:5px;}
+.yellowCell { background-color:#feffbf;}
+.menuCell { padding-top:2px; vertical-align:top; padding-left:15px; padding-right:15px; padding-bottom:10px;}
+
+.defaultTable {border-color:Blue; border-style:groove; }
+.helplink {font-size:small; text-align:center; float:right}
+.editHeader {font-size:large; text-align:center}
+.submitButton {font-size:large; text-align:center}
+.footerButtons { text-align:center }
+.inputForm  
+{
+    margin:0 auto; width:70%; 
+    text-align :center; position:relative;
+    top: 0px;
+    left: -81px;
+}
+.inputLabel {text-align:right }
+.inputControl {text-align: left }
+.TableCenter { margin-left: auto; margin-right: auto; border: 2px; border-style:outset; border-color:#6B3C9E; }
+.TableCellL {background-color:#f7e8d6; text-align:right; padding-bottom:10px; padding-left:5px; }
+.TableCellR {background-color:#f7e8d6; text-align:left; padding-bottom:10px; padding-right:5px; }
+.disabledID {background-color: #CFDBEC; width:100px }
+.FormHeader { margin-left: auto; margin-right: auto; border: 2px; border-style:outset; border-color:Blue; }
+.PanelFormHeader  
+{
+    font-size:larger; 
+    margin-left:5%; 
+    padding-left:2%; 
+    padding-right:2%; 
+    margin-right:5%;
+    width:100%;
+    border: 2;
+    background-color:#DBEAF9;  
+    }
+.FormFooter {margin-left: auto; margin-right: auto; border: 2px; border-style:outset; border-color:Blue;}
+.PanelEditFormHeader { background-color: Khaki;   }
+.ErrorMessage { background-color:Yellow; font-size:x-large;

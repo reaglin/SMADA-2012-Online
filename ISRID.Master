@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ISRID.master.cs" Inherits="SMADA_2012.ISRID"  %>
+<%@ Register Src="~/UserControls/ucFormHeader.ascx" TagPrefix="uc" TagName="UserFormHeader" %>
+<%@ Reference Control="~/UserControls/ucFormHeader.ascx" %>
+<%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="asp" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title></title>
+    <link id="lnkStyles" href="~/styles.css" media="screen, projection" rel="stylesheet" type="text/css" runat="server"/>
+</head>
+
+<body>
+ <form id="form1" runat="server">
+    <center>
+        <asp:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server">
+        </asp:ToolkitScriptManager>
+
+    <div style="float:left;">
+    <asp:HyperLink runat="server" ID="hlHome" Text="Home" NavigateUrl="~/DefaultLoggedIn.aspx"></asp:HyperLink> | 
+    <asp:HyperLink runat="server" ID="HyperLink1" Text="Documentation" 
+                   NavigateUrl="https://smadaonline.pbworks.com/w/page/64541778/FrontPage"
+                   Target="_blank" ></asp:HyperLink>
+    </div>        
+
+    <div style="float:right;">
+    User: <asp:Label runat="server" ID="lblUserName" Text=""></asp:Label> | 
+    <asp:LinkButton runat="server" ID="lbLogout" Text="Logout" onclick="lbLogout_Click"></asp:LinkButton>
+    </div>
+<br /><br />
+    <div class="posttitle">
+        <asp:Label ID="PageTitle" runat="server" CssClass="pagetitle"></asp:Label>
+    </div>
+        
+ </center>
+<div class="formheader">
+<asp:ContentPlaceHolder ID="Header" runat="server"></asp:ContentPlaceHolder>
+</div>
+    <uc:UserFormHeader runat="server" id="ucFormHeaderTop"></uc:UserFormHeader>
+    <br />
+    <asp:ContentPlaceHolder ID="FormContents" runat="server"></asp:ContentPlaceHolder>
+    <br />
+ <asp:Panel ID="Panel2" runat="server">
+    <uc:UserFormHeader runat="server" id="ucFormHeaderBottom"></uc:UserFormHeader>
+</asp:Panel><br />
+</form>
+
+    <asp:ContentPlaceHolder ID="Footer" runat="server">
+    </asp:ContentPlaceHolder>
+    <div class="posttitle">
+    <div class="pageleft">Copyright 2012  
+                            <a href="http://roneaglin.com/" target="_blank">Dr. Ron Eaglin</a></div>&nbsp;
+    <div class="pageright">Developed by Dr. Ron Eaglin</div>
+</div>
+    <img alt="SMADA Logo" longdesc="SMADA Logo" src="ISRIDlogo-notagline.gif" 
+        style="width: 300px; height: 114px; float: left" />
+</body>
+</html>
